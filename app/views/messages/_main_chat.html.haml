@@ -1,0 +1,32 @@
+.chat-main
+
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group{"data-group_id" => "4186"}
+        koji's group
+      %ul.main-header__left-box__member-list
+        Member：
+        %li.main-header__left-box__member-list__member  kojikoji
+    =link_to "/groups/4186/edit" do
+      .main-header__edit-btn Edit
+  
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker kojikoji
+        %p.message__upper-info__date 2019/11/04(Mon) 17:00:16
+      %p.message__text koji~
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker kojikoji
+        %p.message__upper-info__date 2019/11/04(Mon) 17:00:41
+      %p.message__text あ！
+
+  .form
+    %form#new_message.new_message
+      .input-box
+        %input#message_content.input-box__text{:placeholder => "type a message", :type => "text"}
+        %label{class: "input-box__image"}
+          %icon(class="far fa-image")
+          %input#message_image.input-box__image__file{type: "file"}
+      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}

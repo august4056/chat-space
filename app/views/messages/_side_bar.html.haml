@@ -1,0 +1,17 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name kojikoji
+      %ul.side-header__box__menu
+        =link_to "/groups/new", class: "side-header__box__menu__new-group" do
+          %icon(class="fas fa-edit")
+        =link_to "/users/edit", class: "side-header__box__menu__edit-user" do
+          %icon(class="fas fa-cog")
+  
+  .groups
+    =link_to "/groups/messages", class: "group" do
+      %p.group__group-name koji
+      %p.group__latest-message test1 まだメッセージがありません
+    =link_to "/group/messages", class: "group" do
+      %p.group__group-name jiko
+      %p.group__latest-message test2 メッセージ無し
