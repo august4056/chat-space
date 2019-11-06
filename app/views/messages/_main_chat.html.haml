@@ -2,7 +2,7 @@
 
   .main-header
     .main-header__left-box
-      %h2.main-header__left-box__current-group{"data-group_id" => "4186"}
+      %h2.main-header__left-box__current-group
         koji's group
       %ul.main-header__left-box__member-list
         Member：
@@ -25,8 +25,8 @@
   .form
     %form#new_message.new_message
       .input-box
-        %input#message_content.input-box__text{:placeholder => "type a message", :type => "text"}
+        %input#message_content.input-box__text{placeholder: "type a message", type: "text"}
         %label{class: "input-box__image"}
-          %icon(class="far fa-image")
+          %i.fa.fa-image
           %input#message_image.input-box__image__file{type: "file"}
-      %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}
+      %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}
