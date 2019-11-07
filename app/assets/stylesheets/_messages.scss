@@ -13,6 +13,10 @@
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
+      .side-header__box__user-name{
+        font-size: 30px;
+        font-style: italic;
+      }
       .side-header__box__menu{
         display: flex;
         .side-header__box__menu__new-group{
