@@ -1,0 +1,114 @@
+
+.chat-main{
+  width: calc(100vw - 300px);
+  float: left;
+  .main-header{
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    overflow: scroll;
+    .main-header__left-box{
+      margin-top: 35px;
+    .main-header__left-box__current-group{
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 15px;
+    }
+      .main-header__left-box__member-list{
+        font-size: 12px;
+        color: $Gray;
+        display: flex;
+        .main-header__left-box__member-list__member{
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+      .main-header__edit-btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        border: solid 1px $Blue;
+        position: absolute;
+        right: 40px;
+        top: 28px;
+      }
+    }
+
+  .messages{
+    height: calc(100vh - 190px);
+    padding: 46px 40px;
+    background-color: #fafafa;
+    overflow: scroll;
+    .message{
+      padding-bottom: 40px;
+      .message__upper-info{
+        display: flex;
+        margin-top:10px;
+        .message__upper-info__talker{
+          font-size: 16px;
+          font-weight: bold;
+          color: $Black;
+          padding-right: 10px;
+        }
+        .message__upper-info__date{
+          font-size: 12px;
+          color: $Gray;
+        }
+      }
+      .message__text{
+        font-size: 14px;
+        color: $Black;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .form{
+    height: 90px;
+    padding: 20px 40px 0 40px;
+    background-color: #dddddd;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 300px;
+    .new_message{
+      width: calc(100vw-300px);
+      justify-content: space-between;
+      display: flex;
+      .input-box{
+        position: relative;
+        width: 100%;
+        .input-box__text{
+          height: 50px;
+          width: 100%;
+          padding: 0 0 0 10px;
+          color: $Black;
+          border-style: none;
+        }
+        .input-box__image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+
+          .input-box__image__file{
+            display: none;
+          }
+        }
+      }
+      .submit-btn{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 25px;
+        background-color: $Blue;
+        color: $White;
+        cursor: pointer;
+      }
+    }
+  }
+}
