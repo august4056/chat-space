@@ -84,7 +84,7 @@
         .input-box__text{
           height: 50px;
           width: 100%;
-          padding: 0 0 0 10px;
+          // padding: 0 0 0 10px;
           color: $Black;
           border-style: none;
         }
@@ -94,7 +94,6 @@
           top: 10px;
           right: 10px;
           cursor: pointer;
-
           .input-box__image__file{
             display: none;
           }
