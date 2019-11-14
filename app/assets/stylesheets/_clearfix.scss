@@ -1,0 +1,11 @@
+.menu {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .menu__list {
+    float: left;
+  }
+}
