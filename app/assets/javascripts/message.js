@@ -75,5 +75,5 @@ $(function(){
         alert('えらってる');
       });
     }};
-    setInterval(reloadMessages, 2000);
+    setInterval(reloadMessages, 7000);
 });
