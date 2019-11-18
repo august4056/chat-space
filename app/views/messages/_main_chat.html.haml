@@ -12,7 +12,7 @@
       .main-header__edit-btn Edit
   
   .messages
-    = render @messages
+    = render partial: 'message', collection: @messages
  
   .form
     = form_for [@group, @message], class: "new_message" do |f|

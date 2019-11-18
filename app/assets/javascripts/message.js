@@ -64,15 +64,16 @@ $(function(){
         data: {id: last_message_id},
       })
       .done(function(messages){
+        console.log(messages)
         var insertHTML = '';
         messages.forEach(function(message){
           insertHTML = buildHTML(message);
           $('.messages').append(insertHTML);
         })
-        $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
+        // $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
       })
       .fail(function(){
-        alert('えらってる');
+        alert('えらー');
       });
     }};
     setInterval(reloadMessages, 7000);
