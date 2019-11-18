@@ -124,3 +124,8 @@ legend {
 }
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }
+
+// 新しく追加したリセット要素です
+a {
+  text-decoration: none;
+}
