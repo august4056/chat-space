@@ -19,6 +19,6 @@
       .input-box
         = f.text_field :content, class: 'input-box__text', placeholder: "Let's type a message!"
         = f.label :image, class: 'input-box__image' do
-          = icon('fas', 'image', class: 'fa-image')
-          = f.file_field :image, class: 'input-box__image__file'
+          -# = icon('fas', 'image', class: 'fa-image')
+          -# = f.file_field :image, class: 'input-box__image__file'
       = f.submit 'Send', class: 'submit-btn'
